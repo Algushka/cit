@@ -16,5 +16,7 @@ public class Main {
 
         Circle circle=new Circle(1);
         System.out.println(circle);
+        Square square = new Square (2);
+        System.out.println(square);
     }
 }
