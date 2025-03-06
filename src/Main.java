@@ -30,7 +30,9 @@ public class Main {
         System.out.println(list);
         list.get(0).calcArea();
         System.out.println(calcAllFigures(list));
-        System.out.printf("Общая площадь: %.2 f", calcAllFigures(list));
+        System.out.printf("Общая площадь: %.2 f %n", calcAllFigures(list));
+
+        System.out.println(contains (list,new Circle(1)));
     }
     public static double calcAllFigures(List<Figure> list)
     { double result=0;
@@ -40,6 +42,8 @@ public class Main {
 
 return result;
     }
+    public static boolean contains(List<Figure> list, Figure figure)
+    {return list.contains(figure);}
 
 
 }
