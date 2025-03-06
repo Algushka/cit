@@ -11,6 +11,7 @@
 //        чем заданное значение
 
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +29,17 @@ public class Main {
         list.add(circle);
         System.out.println(list);
         list.get(0).calcArea();
+        System.out.println(calcAllFigures(list));
+        System.out.printf("Общая площадь: %.2 f", calcAllFigures(list));
     }
+    public static double calcAllFigures(List<Figure> list)
+    { double result=0;
+        for (Figure figure:list)
+        {result+=figure.calcArea();}
+
+
+return result;
+    }
+
 
 }
